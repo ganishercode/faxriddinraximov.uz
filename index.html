@@ -133,18 +133,8 @@
         <iframe src="https://maps.google.com/maps?q=41.5565545,60.6509924&t=&z=16&ie=UTF8&iwloc=&output=embed" style="border:0;width:100%;height:100%" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <!-- NAVIGATOR & CALENDAR LINKS -->
+      <!-- NAVIGATOR LINKS -->
       <div class="nav-links-map" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
-        <a href="#" onclick="addToCalendar(event)" class="btn-outline">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-            <line x1="16" y1="2" x2="16" y2="6" />
-            <line x1="8" y1="2" x2="8" y2="6" />
-            <line x1="3" y1="10" x2="21" y2="10" />
-            <path d="M12 14h.01M16 14h.01M8 14h.01" />
-          </svg>
-          <span>Taqvimga qo'shish</span>
-        </a>
         <a href="https://yandex.uz/maps/-/CPS-YI3i" target="_blank" class="btn-outline">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -182,6 +172,18 @@
         <h4>Ziyofat</h4>
         <p>Mehmonlar kutib olinadi</p>
       </div>
+    </div>
+    <div style="margin-top:40px;display:flex;justify-content:center">
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Faxriddin+%26+Nigora+Nikoh+To%27yi&dates=20260517T140000Z/20260517T180000Z&details=Sizni+hayotimizning+eng+go%27zal+va+baxtli+kunida+%E2%80%94+nikoh+to%27yimizda+qatnashib,+bizni+duo+qilishingizni+so%27rab+qolamiz.&location=Cholish+yo%27li,+Omad+Bowling+(Diamond+hall)" target="_blank" class="btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="3" y1="10" x2="21" y2="10" />
+          <path d="M12 14h.01M16 14h.01M8 14h.01" />
+        </svg>
+        <span>Kunni belgilab qo'yish</span>
+      </a>
     </div>
   </section>
 
@@ -341,40 +343,6 @@
       const s = window.scrollY;
       if (s < window.innerHeight) { heroPhoto.style.transform = 'scale(' + (1 + s * 0.0003) + ') translateY(' + s * 0.15 + 'px)' }
     }, { passive: true });
-    /* ===== ADD TO CALENDAR ===== */
-    function addToCalendar(e) {
-      e.preventDefault();
-      
-      const icsData = `BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//Faxriddin & Nigora//To'y Taklifnomasi//UZ
-BEGIN:VEVENT
-SUMMARY:Faxriddin & Nigora Nikoh To'yi
-DTSTART:20260517T140000Z
-DTEND:20260517T180000Z
-LOCATION:Cholish yo'li, Omad Bowling (Diamond hall)
-DESCRIPTION:Sizni hayotimizning eng go'zal va baxtli kunida — nikoh to'yimizda qatnashib, bizni duo qilishingizni so'rab qolamiz.\\nSizning ishtirokingiz bizning baxtimizni yanada cheksiz qiladi.
-BEGIN:VALARM
-TRIGGER:-PT24H
-ACTION:DISPLAY
-DESCRIPTION:To'yga 1 kun qoldi!
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT4H
-ACTION:DISPLAY
-DESCRIPTION:To'yga 4 soat qoldi!
-END:VALARM
-END:VEVENT
-END:VCALENDAR`;
-
-      const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
-      const link = document.createElement('a');
-      link.href = window.URL.createObjectURL(blob);
-      link.setAttribute('download', 'Faxriddin_Nigora_Toy.ics');
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
   </script>
 </body>
 
