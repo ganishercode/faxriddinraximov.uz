@@ -192,8 +192,8 @@ h1,h2,h3{font-family:'Playfair Display',serif}
   content:'';position:absolute;left:-29px;top:5px;width:10px;height:10px;
   border-radius:50%;background:var(--gold);border:2px solid var(--cream);
 }
-.timeline-item h4{font-family:'Playfair Display',serif;font-size:1rem;color:var(--dark);margin-bottom:4px}
-.timeline-item p{font-size:.85rem;color:var(--text-light)}
+.timeline-item h4{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,4vw,1.6rem);color:var(--dark);margin-bottom:6px;font-weight:600}
+.timeline-item p{font-size:clamp(1rem,3vw,1.1rem);color:var(--text-light);line-height:1.5}
 
 /* EVENT DETAILS */
 .event-detail{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
