@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>To'y Taklifnomasi — Faxriddin & Nigora</title>
+<meta name="description" content="Faxriddin va Nigora nikoh to'yiga taklifnoma. 17-May, 2026">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+
+<!-- MUSIC -->
+<button class="music-btn" id="musicBtn" title="Musiqa">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  <div class="music-wave"></div>
+</button>
+<audio id="bgMusic" loop preload="auto">
+  <source src="music/audio1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- NAV -->
+<nav class="main-nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-link">Bosh sahifa</a>
+    <a href="#about" class="nav-link">Taklifnoma</a>
+    <a href="#venue" class="nav-link">Toyxona</a>
+    <a href="#gallery" class="nav-link">Fotoalbom</a>
+    <a href="#maps" class="nav-link">Manzil</a>
+  </div>
+</nav>
+
+<!-- ============ HERO SPLIT ============ -->
+<section class="hero" id="home">
+  <div class="hero-photo">
+    <img src="images/hero.png" alt="Faxriddin & Nigora">
+  </div>
+  <div class="hero-content">
+    <p class="hero-subtitle">Sizni kutib qolamiz!</p>
+    <h1 class="hero-names">Faxriddin & Nigora</h1>
+    <p class="hero-date">17 May 2026</p>
+    <div class="hero-countdown" id="heroCountdown">
+      <div class="cbox"><span class="cnum" id="days">00</span><span class="clbl">Kun</span></div>
+      <div class="cbox"><span class="cnum" id="hours">00</span><span class="clbl">Soat</span></div>
+      <div class="cbox"><span class="cnum" id="minutes">00</span><span class="clbl">Daqiqa</span></div>
+      <div class="cbox"><span class="cnum" id="seconds">00</span><span class="clbl">Soniya</span></div>
+    </div>
+    <a href="#about" class="hero-btn">
+      <span>Batafsil Ma'lumot</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"></div>
+      <span>pastga suring</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INFO SPLIT ============ -->
+<section class="info-split" id="about">
+  <!-- LEFT: About -->
+  <div class="info-card reveal-left">
+    <svg class="leaf-decor top-right" viewBox="0 0 80 80" fill="none" stroke="#b8860b" stroke-width="0.5"><path d="M60 5 Q75 20 65 40 Q55 60 35 55 Q15 50 20 30 Q25 10 45 15 Q65 20 55 40"/><path d="M10 70 Q20 55 35 60 Q50 65 45 75"/></svg>
+    <div class="section-header" style="text-align:left">
+      <div class="label">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        TAKLIFNOMA
+      </div>
+      <h2>Hurmatli Mehmon!</h2>
+      <div class="gold-line"></div>
+    </div>
+    <p>Hayotimizning eng go'zal va baxtli kunida — nikoh to'yimizda qatnashib, bizni duo qilishingizni so'rab qolamiz.</p>
+    <p style="margin-top:12px">Sizning ishtirokingiz bizning baxtimizni yanada cheksiz qiladi. Oilaviy hayotimizning boshlanishiga guvoh bo'lishingizni chin dildan kutamiz!</p>
+    <!-- TIMELINE -->
+    <div class="timeline reveal stagger-2">
+      <div class="timeline-item">
+        <h4>Nikoh marosimi</h4>
+        <p>17-May, 2026 — Soat 19:00</p>
+      </div>
+      <div class="timeline-item">
+        <h4>To'y dasturi</h4>
+        <p>19:00 dan 23:00 gacha</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Ziyofat</h4>
+        <p>Mehmonlar kutib olinadi</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Event Details -->
+  <div class="info-card reveal-right" id="venue">
+    <svg class="leaf-decor bottom-left" viewBox="0 0 80 80" fill="none" stroke="#b8860b" stroke-width="0.5"><path d="M60 5 Q75 20 65 40 Q55 60 35 55 Q15 50 20 30 Q25 10 45 15 Q65 20 55 40"/><path d="M10 70 Q20 55 35 60 Q50 65 45 75"/></svg>
+    <div class="section-header" style="text-align:left">
+      <div class="label">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        TADBIR TAFSILOTLARI
+      </div>
+      <h2>To'yxona</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="event-detail">
+      <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+      <div class="detail-text"><h4>17-May, 2026</h4><p>Soat 19:00</p></div>
+    </div>
+    <div class="event-detail">
+      <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div class="detail-text"><h4>TOYXONA NOMI</h4><p>MANZIL, Toshkent shahri</p></div>
+    </div>
+    <div class="event-detail">
+      <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+      <div class="detail-text"><h4>Aloqa</h4><p>+998 XX XXX XX XX</p></div>
+    </div>
+    <!-- MINI MAP -->
+    <div class="mini-map reveal-scale stagger-3">
+      <iframe src="https://yandex.com/map-widget/v1/?pt=69.279737,41.311081&z=15&l=map" allowfullscreen></iframe>
+    </div>
+    <a href="#maps" class="btn-outline">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+      <span>Manzilni ko'rish</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ COUPLE PHOTO ============ -->
+<section class="couple-section">
+  <div class="couple-photo reveal-scale">
+    <img src="images/couple.png" alt="Faxriddin & Nigora">
+  </div>
+  <div class="section-header reveal stagger-1">
+    <div class="label">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      BIZNING SEVGIMIZ
+    </div>
+    <h2 class="cursive" style="font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--gold)">Faxriddin & Nigora</h2>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery-section" id="gallery">
+  <div class="section-header reveal">
+    <div class="label">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      FOTOALBOM
+    </div>
+    <h2>Suratlar</h2>
+    <div class="line"></div>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal-scale stagger-1" onclick="openLB(0)"><img src="images/couple.png" alt=""><div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+    <div class="gallery-item reveal-scale stagger-2" onclick="openLB(1)"><img src="images/rings.png" alt=""><div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+    <div class="gallery-item reveal-scale stagger-3" onclick="openLB(2)"><img src="images/bouquet.png" alt=""><div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+    <div class="gallery-item reveal-scale stagger-1" onclick="openLB(3)"><img src="images/decor.png" alt=""><div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+    <div class="gallery-item reveal-scale stagger-2" onclick="openLB(4)"><img src="images/venue.png" alt=""><div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+    <div class="gallery-item reveal-scale stagger-3" onclick="openLB(5)"><img src="images/hero.png" alt=""><div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-btn lb-close" onclick="closeLB()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <button class="lb-btn lb-prev" onclick="navLB(-1)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" onclick="navLB(1)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+</div>
+
+<!-- ============ MAPS ============ -->
+<!--
+  LOKATSIYANI O'ZGARTIRISH:
+  Yandex: iframe src dagi pt=LONGITUDE,LATITUDE ni o'zgartiring
+  Google: iframe src ni Google Maps Embed dan oling
+-->
+<section class="map-section" id="maps">
+  <div class="section-header reveal">
+    <div class="label">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+      XARITA
+    </div>
+    <h2>Bizni toping</h2>
+    <div class="line"></div>
+  </div>
+  <div class="map-tabs reveal stagger-1">
+    <button class="map-tab active" onclick="switchMap('yandex',this)">Yandex Maps</button>
+    <button class="map-tab" onclick="switchMap('google',this)">Google Maps</button>
+  </div>
+  <div class="map-container active" id="yandex-map">
+    <iframe class="map-frame" src="https://yandex.com/map-widget/v1/?pt=69.279737,41.311081&z=15&l=map" allowfullscreen></iframe>
+  </div>
+  <div class="map-container" id="google-map">
+    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5!2d69.279737!3d41.311081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE4JzM5LjkiTiA2OcKwMTYnNDcuMSJF!5e0!3m2!1sen!2s!4v1" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-names reveal">Faxriddin & Nigora</div>
+  <div class="footer-line"></div>
+  <p class="reveal stagger-1">17-May, 2026 • Sizni kutamiz!</p>
+  <p class="reveal stagger-2" style="margin-top:12px">© 2026 | faxriddinraximov.uz</p>
+</footer>
+
+<script>
+/* ===== COUNTDOWN ===== */
+const W=new Date('2026-05-17T19:00:00').getTime();
+function tick(){
+  const d=W-Date.now();
+  if(d<=0){document.getElementById('heroCountdown').innerHTML='<p style="font-family:Great Vibes,cursive;font-size:1.5rem;color:var(--gold)">To\'y boshlanmoqda!</p>';return}
+  const D=Math.floor(d/864e5),H=Math.floor(d%864e5/36e5),M=Math.floor(d%36e5/6e4),S=Math.floor(d%6e4/1e3);
+  document.getElementById('days').textContent=String(D).padStart(2,'0');
+  document.getElementById('hours').textContent=String(H).padStart(2,'0');
+  document.getElementById('minutes').textContent=String(M).padStart(2,'0');
+  document.getElementById('seconds').textContent=String(S).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}
+  });
+},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>io.observe(el));
+
+/* ===== LIGHTBOX ===== */
+const imgs=['images/couple.png','images/rings.png','images/bouquet.png','images/decor.png','images/venue.png','images/hero.png'];
+let ci=0;
+function openLB(i){ci=i;document.getElementById('lbImg').src=imgs[i];document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden'}
+function closeLB(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow=''}
+function navLB(d){ci=(ci+d+imgs.length)%imgs.length;document.getElementById('lbImg').src=imgs[ci]}
+document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLB()});
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('active'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')navLB(-1);if(e.key==='ArrowRight')navLB(1)});
+
+/* ===== MAP SWITCH ===== */
+function switchMap(t,b){
+  document.querySelectorAll('.map-container').forEach(m=>m.classList.remove('active'));
+  document.querySelectorAll('.map-tab').forEach(x=>x.classList.remove('active'));
+  document.getElementById(t+'-map').classList.add('active');b.classList.add('active');
+}
+
+/* ===== MUSIC — auto start on scroll or click ===== */
+const audio=document.getElementById('bgMusic'),mb=document.getElementById('musicBtn');
+let playing=false;
+const icoPlay='<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div class="music-wave"></div>';
+const icoMute='<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg><div class="music-wave"></div>';
+function startMusic(){
+  if(!playing){audio.play().then(()=>{playing=true;mb.innerHTML=icoMute;mb.classList.add('playing')}).catch(()=>{})}
+}
+function toggleMusic(){
+  if(playing){audio.pause();mb.innerHTML=icoPlay;mb.classList.remove('playing');playing=false}
+  else{audio.play().catch(()=>{});mb.innerHTML=icoMute;mb.classList.add('playing');playing=true}
+}
+mb.addEventListener('click',toggleMusic);
+// Auto-start on first user interaction (click or scroll)
+function autoStart(){startMusic();window.removeEventListener('scroll',autoStart);document.removeEventListener('click',autoStart);document.removeEventListener('touchstart',autoStart)}
+window.addEventListener('scroll',autoStart,{once:true,passive:true});
+document.addEventListener('click',autoStart,{once:true});
+document.addEventListener('touchstart',autoStart,{once:true,passive:true});
+
+/* ===== NAV SHOW ON SCROLL ===== */
+const nav=document.getElementById('mainNav'),hero=document.getElementById('home');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('visible',window.scrollY>hero.offsetHeight*0.6);
+},{passive:true});
+
+/* ===== PARTICLES ===== */
+(function(){const c=document.getElementById('particles');for(let i=0;i<15;i++){const p=document.createElement('div');p.className='particle';p.style.left=Math.random()*100+'%';const s=Math.random()*3+2;p.style.width=p.style.height=s+'px';p.style.animationDuration=(Math.random()*12+10)+'s';p.style.animationDelay=(Math.random()*15)+'s';p.style.opacity=Math.random()*.2+.05;c.appendChild(p)}})();
+
+/* ===== PARALLAX HERO PHOTO ===== */
+const heroPhoto=document.querySelector('.hero-photo img');
+window.addEventListener('scroll',()=>{
+  const s=window.scrollY;
+  if(s<window.innerHeight){heroPhoto.style.transform='scale('+(1+s*0.0003)+') translateY('+s*0.15+'px)'}
+},{passive:true});
+</script>
+</body>
+</html>
